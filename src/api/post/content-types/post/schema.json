@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "guitars",
+  "collectionName": "posts",
   "info": {
-    "singularName": "guitar",
-    "pluralName": "guitars",
-    "displayName": "Guitars",
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Post",
     "description": ""
   },
   "options": {
@@ -16,16 +16,13 @@
       "type": "string",
       "required": true
     },
-    "description": {
+    "content": {
       "type": "richtext"
-    },
-    "price": {
-      "type": "integer"
     },
     "image": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]

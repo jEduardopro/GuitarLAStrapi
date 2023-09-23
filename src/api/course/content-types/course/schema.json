@@ -1,10 +1,10 @@
 {
-  "kind": "collectionType",
-  "collectionName": "guitars",
+  "kind": "singleType",
+  "collectionName": "courses",
   "info": {
-    "singularName": "guitar",
-    "pluralName": "guitars",
-    "displayName": "Guitars",
+    "singularName": "course",
+    "pluralName": "courses",
+    "displayName": "Courses",
     "description": ""
   },
   "options": {
@@ -16,23 +16,16 @@
       "type": "string",
       "required": true
     },
-    "description": {
+    "content": {
       "type": "richtext"
-    },
-    "price": {
-      "type": "integer"
     },
     "image": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
-    },
-    "url": {
-      "type": "uid",
-      "targetField": "title"
     }
   }
 }
